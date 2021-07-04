@@ -1,18 +1,24 @@
 package application;
 	
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 
 
 public class Main extends Application {
+	
+	
 	@SuppressWarnings("exports")
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+
 		try {
 					
 			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("FXMLMain.fxml"));
