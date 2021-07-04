@@ -21,7 +21,7 @@ public class Main extends Application {
 
 		try {
 					
-			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("FXMLMain.fxml"));
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Menue.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setTitle("Urbane Stadtärten");

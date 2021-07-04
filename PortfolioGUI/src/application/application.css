@@ -1,1 +1,7 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#menuPane{
+	
+	-fx-background-image: url(https://www.plantura.garden/wp-content/uploads/2017/12/landwirtschaft-urban.jpg);
+	
+}
