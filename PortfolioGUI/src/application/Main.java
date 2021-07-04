@@ -25,6 +25,8 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setTitle("Urbane Stadtärten");
+			primaryStage.setMinHeight(400.00);
+			primaryStage.setMinWidth(500.00);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
