@@ -21,10 +21,10 @@ public class Main extends Application {
 
 		try {
 					
-			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Menue.fxml"));
+			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Login.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setTitle("Urbane Stadtärten");
+			primaryStage.setTitle("Urbane Stadtgärten");
 			primaryStage.setMinHeight(400.00);
 			primaryStage.setMinWidth(500.00);
 			primaryStage.setScene(scene);
