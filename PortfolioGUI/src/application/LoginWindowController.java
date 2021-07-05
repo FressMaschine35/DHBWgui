@@ -33,7 +33,7 @@ public class LoginWindowController {
 	}
 
 	@FXML
-	private void checkLogin() throws IOException{
+	public void checkLogin() throws IOException{
 		Main m = new Main();
 		if(userField.getText().toString().equals("Rietdorf") && userPassword.getText().toString().equals("123")) {
 			warningLable.setText("Access");

@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="436.0" fitWidth="279.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Archikids_Feldbau-im-Wolkenkratzer.jpg" />
+                  <Image url="@IMG/Archikids_Feldbau-im-Wolkenkratzer.jpg" />
                </image>
             </ImageView>
          </children>
