@@ -18,7 +18,7 @@
             <Image url="@../../../../../img_banner_top.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="20.0" layoutY="26.0" text="Willkommen, ">
+      <Label fx:id="labelWelcome" layoutX="20.0" layoutY="26.0" text="Willkommen, ">
          <font>
             <Font size="36.0" />
          </font>
@@ -27,7 +27,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="309.0" prefWidth="1280.0" spacing="140.0">
                <children>
-                  <Group fx:id="buttonGarten" accessibleRole="BUTTON">
+                  <Group fx:id="buttonGarten" accessibleRole="BUTTON" onMouseClicked="#clickButtonGarten">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
@@ -43,7 +43,7 @@
                         </ImageView>
                      </children>
                   </Group>
-                  <Group fx:id="buttonVerpachtung">
+                  <Group fx:id="buttonVerpachtung" onMouseClicked="#clickButtonVerpachtung">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
@@ -63,7 +63,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="296.0" prefWidth="1280.0" spacing="140.0">
                <children>
-                  <Group fx:id="buttonStammdaten">
+                  <Group fx:id="buttonStammdaten" onMouseClicked="#clickButtonStammdaten">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
@@ -79,7 +79,7 @@
                         </ImageView>
                      </children>
                   </Group>
-                  <Group fx:id="buttonSuchen">
+                  <Group fx:id="buttonSuchen" onMouseClicked="#clickButtonSuche">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />

@@ -53,6 +53,7 @@ public class LoginWindowController {
 		
 		if((userField.getText().toString().equals("Rietdorf") && userPassword.getText().toString().equals("123"))||( userField.getText().isEmpty() && userPassword.getText().isEmpty())) {
 			warningLable.setText("Access");
+			
 			window2.setScene(secondWindowScene);
 			window2.show();
 			window.close();
