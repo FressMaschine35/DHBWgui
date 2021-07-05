@@ -36,22 +36,36 @@ public class LoginWindowController {
 	public void loginUser (@SuppressWarnings("exports") ActionEvent event) throws IOException{
 		checkLogin(event);
 	}
-	@SuppressWarnings("exports")
+
 	@FXML
-	public void checkLogin( ActionEvent event) throws IOException{
-		
+	private void checkLogin(ActionEvent event) throws IOException{
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Menue.fxml"));
-        Scene secondWindowScene=new Scene(secondWindowParent);
-
-        Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-
-        window.setScene(secondWindowScene);
-        window.show();
-		}
+		Scene secondWindowScene=new Scene(secondWindowParent);
 		
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		Stage window2=new Stage();
+		
+		
+		
+		
+		
+		
+		
+		if((userField.getText().toString().equals("Rietdorf") && userPassword.getText().toString().equals("123"))||( userField.getText().isEmpty() && userPassword.getText().isEmpty())) {
+			warningLable.setText("Access");
+			window2.setScene(secondWindowScene);
+			window2.show();
+			//window.close();
+		}
+				
+		else {
+			warningLable.setText("Benutzer oder Passwort Falsch");
+			userField.clear();
+			userPassword.clear();
+		}
 	
 	
 	
-	
-}	
+}
+}
 
