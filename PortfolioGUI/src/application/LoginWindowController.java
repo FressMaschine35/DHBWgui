@@ -55,7 +55,7 @@ public class LoginWindowController {
 			warningLable.setText("Access");
 			window2.setScene(secondWindowScene);
 			window2.show();
-			//window.close();
+			window.close();
 		}
 				
 		else {
