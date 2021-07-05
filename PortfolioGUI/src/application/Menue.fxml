@@ -36,9 +36,9 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="403.0" layoutY="60.0">
                            <image>
-                              <Image url="@../../../../../../Downloads/baume.png" />
+                              <Image url="@IMG/landwirtschaft.png" />
                            </image>
                         </ImageView>
                      </children>
