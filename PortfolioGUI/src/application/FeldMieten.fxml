@@ -12,126 +12,149 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="application.FeldMietenController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeldMietenController">
    <children>
-      <VBox layoutX="41.0" layoutY="31.0" prefHeight="659.0" prefWidth="458.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+      <VBox layoutX="488.0" layoutY="326.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
          <children>
-            <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="95.0" prefWidth="460.0" text="Feldbezeichnung">
-               <font>
-                  <Font name="System Bold" size="44.0" />
-               </font>
-            </Label>
-            <VBox alignment="CENTER_RIGHT" prefHeight="187.0" prefWidth="458.0">
+            <HBox prefHeight="608.0" prefWidth="1220.0">
                <children>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="458.0">
+                  <VBox prefHeight="660.0" prefWidth="528.0">
                      <children>
-                        <Label prefHeight="36.0" prefWidth="136.0" text="Verpächter:">
+                        <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="95.0" prefWidth="460.0" text="Feldbezeichnung">
                            <font>
-                              <Font size="25.0" />
+                              <Font name="System Bold" size="44.0" />
                            </font>
                         </Label>
-                        <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Vorname Nachname" wrappingWidth="279.13671875">
-                           <font>
-                              <Font name="System Bold" size="25.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
-                     <children>
-                        <Label prefHeight="36.0" prefWidth="63.0" text="Von:">
-                           <font>
-                              <Font size="25.0" />
-                           </font>
-                        </Label>
-                        <DatePicker prefHeight="38.0" prefWidth="276.0" />
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
-                     <children>
-                        <Label prefHeight="36.0" prefWidth="51.0" text="Bis:">
-                           <font>
-                              <Font size="25.0" />
-                           </font>
-                        </Label>
-                        <DatePicker prefHeight="38.0" prefWidth="276.0" />
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox alignment="BOTTOM_CENTER" prefHeight="379.0" prefWidth="458.0">
-               <children>
-                  <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="458.0">
-                     <children>
-                        <Label prefHeight="36.0" prefWidth="114.0" text="Adresse:">
-                           <font>
-                              <Font size="25.0" />
-                           </font>
-                           <opaqueInsets>
-                              <Insets left="10.0" />
-                           </opaqueInsets>
-                        </Label>
-                        <VBox prefHeight="71.0" prefWidth="330.0">
+                        <VBox alignment="CENTER_RIGHT" prefHeight="187.0" prefWidth="458.0">
                            <children>
-                              <Text fx:id="TextStrNr" strokeType="OUTSIDE" strokeWidth="0.0" text="Straße Nr." wrappingWidth="310.13671875">
-                                 <font>
-                                    <Font size="25.0" />
-                                 </font>
-                              </Text>
-                              <Text fx:id="TextPLZStadt" strokeType="OUTSIDE" strokeWidth="0.0" text="PLZ Stadt" wrappingWidth="310.13671875">
-                                 <font>
-                                    <Font size="25.0" />
-                                 </font>
-                              </Text>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="136.0" text="Verpächter:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Vorname Nachname" wrappingWidth="279.13671875">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="84.0" text="Fläche:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="TextFlaeche" strokeType="OUTSIDE" strokeWidth="0.0" text="Fläche in m²" wrappingWidth="279.13671875">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="63.0" text="Von:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker prefHeight="38.0" prefWidth="276.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="51.0" text="Bis:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker prefHeight="38.0" prefWidth="276.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="379.0" prefWidth="458.0">
+                           <children>
+                              <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="114.0" text="Adresse:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets left="10.0" />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <VBox prefHeight="71.0" prefWidth="330.0">
+                                       <children>
+                                          <Text fx:id="TextStrNr" strokeType="OUTSIDE" strokeWidth="0.0" text="Straße Nr." wrappingWidth="310.13671875">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="TextPLZStadt" strokeType="OUTSIDE" strokeWidth="0.0" text="PLZ Stadt" wrappingWidth="310.13671875">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <WebView fx:id="WebMaps" prefHeight="230.0" prefWidth="458.0">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" />
+                                 </VBox.margin>
+                              </WebView>
                            </children>
                         </VBox>
                      </children>
-                  </HBox>
-                  <WebView fx:id="WebMaps" prefHeight="230.0" prefWidth="458.0">
-                     <VBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" />
-                     </VBox.margin>
-                  </WebView>
-               </children>
-            </VBox>
-         </children>
-      </VBox>
-      <VBox alignment="CENTER" layoutX="606.0" layoutY="30.0" prefHeight="660.0" prefWidth="666.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
-         <children>
-            <ImageView fx:id="ImageBig" fitHeight="310.0" fitWidth="510.0" pickOnBounds="true" preserveRatio="true" />
-            <HBox alignment="CENTER" prefHeight="289.0" prefWidth="666.0">
-               <children>
-                  <ImageView fx:id="ImageSmallLeft" fitHeight="236.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fx:id="ImageSmallRight" fitHeight="236.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                  </ImageView>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="660.0" prefWidth="700.0">
+                     <children>
+                        <ImageView fx:id="ImageBig" fitHeight="310.0" fitWidth="510.0" pickOnBounds="true" preserveRatio="true" />
+                        <HBox alignment="CENTER" prefHeight="289.0" prefWidth="666.0">
+                           <children>
+                              <ImageView fx:id="ImageSmallLeft" fitHeight="236.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="ImageSmallRight" fitHeight="236.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="666.0">
+            <HBox prefHeight="51.0" prefWidth="1220.0">
                <children>
-                  <Button id="ButtonMieten" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" text="Mieten">
-                     <font>
-                        <Font name="System Bold" size="21.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="100.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button id="ButtonAbbrechen" mnemonicParsing="false" prefHeight="45.0" prefWidth="142.0" text="Abbrechen">
-                     <font>
-                        <Font name="System Bold" size="21.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </Button>
+                  <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="604.0">
+                     <children>
+                        <Button id="ButtonAbbrechen" mnemonicParsing="false" prefHeight="45.0" prefWidth="142.0" text="Abbrechen">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="616.0">
+                     <children>
+                        <Button id="ButtonMieten" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" text="Mieten">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
                </children>
             </HBox>
          </children>
