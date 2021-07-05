@@ -1,31 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="124.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="256.0" fitWidth="1291.0" layoutY="-141.0" opacity="0.5">
          <image>
-            <Image url="@../../../../../landwirtschaft-urban.jpg" />
+            <Image url="@../../../../../img_banner_top.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="335.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../landwirtschaft-urban.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="128.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../landwirtschaft-urban.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="339.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../landwirtschaft-urban.jpg" />
-         </image>
-      </ImageView>
+      <Label layoutX="20.0" layoutY="26.0" text="Willkommen, ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutY="115.0" prefHeight="605.0" prefWidth="1280.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="309.0" prefWidth="1280.0" spacing="140.0">
+               <children>
+                  <Group>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
+                        <Text layoutX="423.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Gärten">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
+                           <image>
+                              <Image url="@../../../../../../Downloads/baume.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+                  <Group>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
+                        <Text layoutX="423.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtung">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
+                           <image>
+                              <Image url="@../../../../../../Downloads/deal%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="296.0" prefWidth="1280.0" spacing="140.0">
+               <children>
+                  <Group>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
+                        <Text layoutX="423.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
+                           <image>
+                              <Image url="@../../../../../../Downloads/offenes-buch.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+                  <Group>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
+                        <Text layoutX="445.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suche">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
+                           <image>
+                              <Image url="@../../../../../../Downloads/suchen.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </Pane>
