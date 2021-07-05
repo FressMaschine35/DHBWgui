@@ -76,6 +76,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
                   </Button>
                </children>
             </VBox>
@@ -127,6 +130,9 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <VBox.margin>
+                        <Insets top="45.0" />
+                     </VBox.margin>
                   </Button>
                </children>
             </VBox>
