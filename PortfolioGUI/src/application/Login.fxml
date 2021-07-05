@@ -33,7 +33,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label fx:id="warningLable" layoutX="87.0" layoutY="109.0" textFill="#d70c0c" />
+            <Label fx:id="warningLable" layoutX="87.0" layoutY="109.0" text="Test" textFill="#d70c0c" />
          </children>
       </AnchorPane>
    </right>
