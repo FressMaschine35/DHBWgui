@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 
@@ -138,5 +139,6 @@
             </VBox>
          </children>
       </HBox>
+      <Line endX="-100.0" endY="534.7999877929688" layoutX="740.0" layoutY="171.0" startX="-100.0" startY="34.0" />
    </children>
 </Pane>
