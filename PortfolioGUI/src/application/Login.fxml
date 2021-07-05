@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginWindowController">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="243.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,14 +25,15 @@
    <right>
       <AnchorPane prefHeight="400.0" prefWidth="323.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="86.0" layoutY="135.0" promptText="Benutzer" />
-            <PasswordField layoutX="87.0" layoutY="175.0" promptText="Passwort" />
-            <Button layoutX="185.0" layoutY="221.0" mnemonicParsing="false" text="Login" />
-            <Label layoutX="87.0" layoutY="74.0" text="Login">
+            <TextField id="userField" layoutX="86.0" layoutY="135.0" promptText="Benutzer" />
+            <PasswordField id="userPassword" layoutX="87.0" layoutY="175.0" promptText="Passwort" />
+            <Button id="lbutton" fx:id="lbutton" layoutX="185.0" layoutY="221.0" mnemonicParsing="false" onAction="loginUser" text="Login" />
+            <Label fx:id="loginField" layoutX="87.0" layoutY="74.0" text="Login">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
+            <Label fx:id="warningLable" layoutX="87.0" layoutY="109.0" textFill="#d70c0c" />
          </children>
       </AnchorPane>
    </right>

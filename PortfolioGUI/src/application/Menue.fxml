@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
 
-<AnchorPane prefHeight="562.0" prefWidth="722.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <Pane />
+      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="124.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../landwirtschaft-urban.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="335.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../landwirtschaft-urban.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="128.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../landwirtschaft-urban.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="129.0" fitWidth="136.0" layoutX="339.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../landwirtschaft-urban.jpg" />
+         </image>
+      </ImageView>
    </children>
-</AnchorPane>
+</Pane>
