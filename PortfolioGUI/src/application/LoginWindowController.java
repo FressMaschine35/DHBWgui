@@ -4,10 +4,15 @@ package application;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class LoginWindowController {
 	
@@ -29,28 +34,24 @@ public class LoginWindowController {
 	
 	@FXML
 	public void loginUser (@SuppressWarnings("exports") ActionEvent event) throws IOException{
-		checkLogin();
+		checkLogin(event);
 	}
-
+	@SuppressWarnings("exports")
 	@FXML
-	public void checkLogin() throws IOException{
-		Main m = new Main();
-		if(userField.getText().toString().equals("Rietdorf") && userPassword.getText().toString().equals("123")) {
-			warningLable.setText("Access");
-			
-			m.changeScene("Menue.fxml");
-			
-		}
-		else if( userField.getText().isEmpty() && userPassword.getText().isEmpty()) {
-			warningLable.setText("Access");
-		}
-		else {
-			warningLable.setText("Benutzer oder Passwort Falsch");
+	public void checkLogin( ActionEvent event) throws IOException{
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Menue.fxml"));
+        Scene secondWindowScene=new Scene(secondWindowParent);
+
+        Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(secondWindowScene);
+        window.show();
 		}
 		
-	}
 	
 	
 	
 	
-}
+}	
+
