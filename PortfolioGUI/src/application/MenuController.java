@@ -43,7 +43,7 @@ public class MenuController {
 	@FXML
 	public void clickButtonVerpachtung (@SuppressWarnings("exports") MouseEvent event) throws IOException {
 		
-		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FXMLMain.fxml"));
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("VerpachteteFelder.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
 		
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
