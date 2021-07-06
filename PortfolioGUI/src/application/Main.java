@@ -22,7 +22,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));		
+			Parent root = FXMLLoader.load(getClass().getResource("Suche.fxml"));		
 			//BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Login.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
