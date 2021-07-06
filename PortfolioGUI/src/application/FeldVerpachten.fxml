@@ -5,14 +5,20 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="application.FeldVerpachtenController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeldVerpachtenController">
    <children>
+      <ImageView fitHeight="373.0" fitWidth="1296.0" layoutY="-210.0" opacity="0.6">
+         <image>
+            <Image url="@IMG/img_banner_top.jpg" />
+         </image>
+      </ImageView>
       <VBox layoutX="405.0" layoutY="175.0" prefHeight="399.0" prefWidth="708.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
          <children>
             <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="102.0" prefWidth="496.0" text="Feld verpachten">
@@ -24,7 +30,7 @@
                <children>
                   <VBox prefHeight="525.0" prefWidth="515.0">
                      <children>
-                        <HBox alignment="CENTER_RIGHT" prefHeight="96.0" prefWidth="610.0">
+                        <HBox alignment="CENTER_RIGHT" prefHeight="154.0" prefWidth="515.0">
                            <children>
                               <Label prefHeight="30.0" prefWidth="145.0" text="Anzeigenname:">
                                  <font>
@@ -88,9 +94,9 @@
                   </VBox>
                   <VBox prefHeight="525.0" prefWidth="707.0">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                        <HBox alignment="CENTER" prefHeight="213.0" prefWidth="707.0">
                            <children>
-                              <Label prefHeight="51.0" prefWidth="317.0" text="Laden Sie bis zu drei Bilder hoch:">
+                              <Label prefHeight="53.0" prefWidth="317.0" text="Laden Sie bis zu drei Bilder hoch:">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -102,7 +108,7 @@
                               </Button>
                            </children>
                         </HBox>
-                        <ListView prefHeight="296.0" prefWidth="662.0">
+                        <ListView prefHeight="257.0" prefWidth="547.0">
                            <VBox.margin>
                               <Insets left="80.0" right="80.0" />
                            </VBox.margin>
