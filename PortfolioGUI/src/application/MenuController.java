@@ -31,7 +31,7 @@ public class MenuController {
 	@FXML
 	public void clickButtonGarten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
 		
-		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FXMLMain.fxml"));
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("MeineFelder.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
 		
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
@@ -75,4 +75,7 @@ public class MenuController {
 		window.show();
 		
 	}
+	
+	
+	
 }

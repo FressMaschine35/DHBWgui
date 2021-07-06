@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.lynden.gmapsfx.GoogleMapView?>
+<!-- <?import com.lynden.gmapsfx.GoogleMapView?> -->
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -33,7 +33,7 @@
             <Menu mnemonicParsing="false" text="Suche" />
         </menus>
       </MenuBar>
-      <GoogleMapView layoutX="46.0" layoutY="174.0" prefHeight="140.0" prefWidth="135.0" />
+<!--       <GoogleMapView layoutX="46.0" layoutY="174.0" prefHeight="140.0" prefWidth="135.0" /> -->
       <TextField layoutX="409.0" layoutY="110.0" promptText="Stadt, PLZ" />
       <ImageView fitHeight="140.0" fitWidth="135.0" layoutX="233.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
          <image>
