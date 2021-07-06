@@ -137,7 +137,4 @@
          </font>
       </Text>
    </children>
-   <stylesheets>
-    <URL value="@application.css" />
-</stylesheets>
 </Pane>
