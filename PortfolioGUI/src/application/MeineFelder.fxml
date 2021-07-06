@@ -121,7 +121,7 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Text fx:id="TextVerpachten" layoutX="220.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtete Felder">
+      <Text fx:id="TextVerpachten" layoutX="220.0" layoutY="84.0" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtete Felder">
          <font>
             <Font size="24.0" />
          </font>

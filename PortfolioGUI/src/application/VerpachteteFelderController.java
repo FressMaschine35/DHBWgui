@@ -13,7 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class MeineFelderController {
+public class VerpachteteFelderController {
 	@FXML
 	private Text TextMenu;
 	@FXML
@@ -39,9 +39,9 @@ public class MeineFelderController {
 		window.show();
 	}
 	@FXML
-	public void clickTextVerpachten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+	public void clickTextMeineFelder (@SuppressWarnings("exports") MouseEvent event) throws IOException {
 		
-		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("VerpachteteFelder.fxml"));
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("MeineFelder.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
 		
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
