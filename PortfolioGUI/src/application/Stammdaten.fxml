@@ -152,12 +152,16 @@
             </HBox>
             <HBox prefHeight="90.0" prefWidth="1280.0">
                <children>
-                  <HBox alignment="BOTTOM_LEFT" prefHeight="106.0" prefWidth="611.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="106.0" prefWidth="611.0">
                      <children>
-                        <Button fx:id="ButtonAbbrechen" alignment="CENTER" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="57.0" prefWidth="173.0" text="Abbrechen">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
+                        <Button fx:id="ButtonAbbrechen" alignment="CENTER" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="34.0" prefWidth="106.0" text="Abbrechen">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@../../../../../GUI/Abbruch-IMG.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Button>
                      </children>
                      <opaqueInsets>
