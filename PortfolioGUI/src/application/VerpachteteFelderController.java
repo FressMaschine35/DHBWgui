@@ -43,7 +43,7 @@ public class VerpachteteFelderController {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("MeineFelder.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
-		
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(secondWindowScene);
 		window.show();
