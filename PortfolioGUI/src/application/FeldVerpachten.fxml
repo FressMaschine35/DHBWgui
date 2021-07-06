@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="application.FeldVerpachtenController">
+   <children>
+      <VBox layoutX="405.0" layoutY="175.0" prefHeight="399.0" prefWidth="708.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="102.0" prefWidth="496.0" text="Feld verpachten">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="537.0" prefWidth="1220.0">
+               <children>
+                  <VBox prefHeight="525.0" prefWidth="515.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="96.0" prefWidth="610.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="145.0" text="Anzeigenname:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TextfieldFeldName" prefHeight="27.0" prefWidth="337.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="610.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="69.0" text="Straße:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TextfieldStrasse" prefHeight="27.0" prefWidth="337.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="610.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="79.0" text="Hausnr.:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TextfieldHausNr" prefHeight="27.0" prefWidth="338.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="610.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="46.0" text="PLZ:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TextfieldPLZ" prefHeight="27.0" prefWidth="337.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="610.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="43.0" text="Ort:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TextfieldOrt" prefHeight="27.0" prefWidth="337.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="88.0" prefWidth="514.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="70.0" text="Fläche:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TextfieldFlaeche" prefHeight="27.0" prefWidth="337.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="525.0" prefWidth="707.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="51.0" prefWidth="317.0" text="Laden Sie bis zu drei Bilder hoch:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="ButtonDurchsuchen" mnemonicParsing="false" prefHeight="50.0" prefWidth="152.0" text="Durchsuchen">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ListView prefHeight="296.0" prefWidth="662.0">
+                           <VBox.margin>
+                              <Insets left="80.0" right="80.0" />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="58.0" prefWidth="1220.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="1062.0">
+                     <children>
+                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" prefHeight="53.0" prefWidth="147.0" text="Abbrechen">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="1021.0">
+                     <children>
+                        <Button fx:id="ButtonVerpachten" mnemonicParsing="false" prefHeight="53.0" prefWidth="147.0" text="Verpachten">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
