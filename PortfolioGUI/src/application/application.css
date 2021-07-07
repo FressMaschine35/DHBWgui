@@ -10,6 +10,11 @@
 	-fx-background-color: #ffffff;
 	
 }
+
+Hyperlink {
+	-fx-border-color: transparent;
+}
+
 .menu{
 	
 	-fx-fill: #000000;

@@ -23,13 +23,13 @@
          </children>
       </AnchorPane>
    </left>
-   <right>
+   <center>
       <AnchorPane prefHeight="400.0" prefWidth="323.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField id="userField" fx:id="userField" layoutX="86.0" layoutY="135.0" promptText="Benutzer" />
-            <PasswordField id="userPassword" fx:id="userPassword" layoutX="87.0" layoutY="175.0" promptText="Passwort" />
-            <Button id="lbutton" fx:id="lbutton" layoutX="185.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginUser" text="Login" />
-            <Label fx:id="loginField" layoutX="87.0" layoutY="74.0" text="Login">
+            <TextField id="userField" fx:id="userField" layoutX="80.0" layoutY="123.0" prefHeight="25.0" prefWidth="170.0" promptText="Benutzer" />
+            <PasswordField id="userPassword" fx:id="userPassword" layoutX="80.0" layoutY="163.0" prefHeight="25.0" prefWidth="171.0" promptText="Passwort" />
+            <Button id="lbutton" fx:id="lbutton" layoutX="199.0" layoutY="213.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="25.0" prefWidth="53.0" text="Login" />
+            <Label fx:id="loginField" layoutX="81.0" layoutY="66.0" text="Login">
                <font>
                   <Font size="24.0" />
                </font>
@@ -47,8 +47,8 @@
                   <Image url="@../../../../../../Pictures/3358056.png" />
                </image>
             </ImageView>
-            <Hyperlink layoutX="172.0" layoutY="352.0" text="Passwort vergessen?" />
+            <Hyperlink layoutX="76.0" layoutY="192.0" text="Passwort vergessen?" />
          </children>
       </AnchorPane>
-   </right>
+   </center>
 </BorderPane>
