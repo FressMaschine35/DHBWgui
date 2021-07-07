@@ -7,6 +7,7 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
@@ -28,7 +29,7 @@
                               <Font size="28.0" />
                            </font>
                         </Text>
-                        <Label layoutX="216.0" layoutY="81.0" text="Verpachtet bis ">
+                        <Label layoutX="216.0" layoutY="81.0" text="Gepachtet bis">
                            <font>
                               <Font name="System Bold" size="26.0" />
                            </font>
@@ -58,7 +59,7 @@
                               <Font size="28.0" />
                            </font>
                         </Text>
-                        <Label layoutX="216.0" layoutY="81.0" text="Verpachtet bis ">
+                        <Label layoutX="216.0" layoutY="81.0" text="Gepachtet bis ">
                            <font>
                               <Font name="System Bold" size="26.0" />
                            </font>
@@ -85,7 +86,7 @@
                               <Font size="28.0" />
                            </font>
                         </Text>
-                        <Label layoutX="216.0" layoutY="81.0" text="Verpachtet bis ">
+                        <Label layoutX="216.0" layoutY="81.0" text="Gepachtet bis ">
                            <font>
                               <Font name="System Bold" size="26.0" />
                            </font>
@@ -128,25 +129,29 @@
             </ImageView>
          </graphic>
       </Hyperlink>
-      <Text id="menu" fx:id="TextMenu" layoutX="116.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Menü">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text id="menu" fx:id="TextVerpachten" layoutX="220.0" layoutY="84.0" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Verpachtete Felder">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text id="menu" fx:id="TextStammdaten" layoutX="483.0" layoutY="84.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Stammdaten">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text id="menu" fx:id="TextSuche" layoutX="682.0" layoutY="84.0" onMouseClicked="#clickTextSuche" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Suche">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
+      <HBox alignment="CENTER" layoutX="52.0" layoutY="26.0" prefHeight="100.0" prefWidth="588.0" spacing="30.0">
+         <children>
+            <Text id="menu" fx:id="TextMenu" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Menü">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text id="menu" fx:id="TextVerpachten" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Verpachtete Felder">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text id="menu" fx:id="TextStammdaten" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Stammdaten">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text id="menu" fx:id="TextSuche" onMouseClicked="#clickTextSuche" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Suche">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
    </children>
 </Pane>

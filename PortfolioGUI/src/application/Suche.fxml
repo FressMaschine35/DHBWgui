@@ -7,63 +7,29 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
-	minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
-	prefWidth="1280.0" xmlns="http://javafx.com/javafx/16"
-	xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="application.SuchController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SuchController">
 	<children>
 		<Group layoutX="503.0" layoutY="203.0" />
-		<ImageView fitHeight="282.0" fitWidth="1280.0"
-			layoutY="-151.0" opacity="0.6">
+		<ImageView fitHeight="282.0" fitWidth="1280.0" layoutY="-151.0" opacity="0.6">
 			<image>
 				<Image url="@IMG/img_banner_top.jpg" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="201.0" fitWidth="174.0"
-			layoutX="348.0" layoutY="267.0" pickOnBounds="true"
-			preserveRatio="true" AnchorPane.bottomAnchor="272.84071350097656"
-			AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="267.0">
+		<ImageView fitHeight="201.0" fitWidth="174.0" layoutX="348.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="272.84071350097656" AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="267.0">
 			<image>
 				<Image url="@IMG/Heidelberg.jpg" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="186.0" fitWidth="227.0"
-			layoutX="348.0" layoutY="447.0" pickOnBounds="true"
-			preserveRatio="true" AnchorPane.bottomAnchor="87.0"
-			AnchorPane.rightAnchor="757.525634765625"
-			AnchorPane.topAnchor="447.0">
+		<ImageView fitHeight="186.0" fitWidth="227.0" layoutX="348.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="87.0" AnchorPane.rightAnchor="757.525634765625" AnchorPane.topAnchor="447.0">
 			<image>
 				<Image url="@IMG/Mannheim.jpg" />
 			</image>
 		</ImageView>
-		<Text fx:id="TextMenu" layoutX="86.0" layoutY="84.0"
-			onMouseClicked="#clickTextMenu" strokeType="OUTSIDE"
-			strokeWidth="0.0" styleClass="menu" text="Menü">
-			<font>
-				<Font size="24.0" />
-			</font>
-		</Text>
-		<Text fx:id="TextVerpachten" layoutX="422.0" layoutY="83.0"
-			onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE"
-			strokeWidth="0.0" styleClass="menu" text="Verpachtete Felder">
-			<font>
-				<Font size="24.0" />
-			</font>
-		</Text>
-		<Text fx:id="TextStammdaten" layoutX="701.0" layoutY="85.0"
-			onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE"
-			strokeWidth="0.0" styleClass="menu" text="Stammdaten">
-			<font>
-				<Font size="24.0" />
-			</font>
-		</Text>
-		<Hyperlink fx:id="HyperlinkAbmelden" layoutX="1047.0"
-			layoutY="53.0" onAction="#clickHyperlinkAbmelden" prefHeight="45.0"
-			prefWidth="171.0" styleClass="exit" text="Abmelden">
+		<Hyperlink fx:id="HyperlinkAbmelden" layoutX="1047.0" layoutY="53.0" onAction="#clickHyperlinkAbmelden" prefHeight="45.0" prefWidth="171.0" styleClass="exit" text="Abmelden">
 			<font>
 				<Font size="24.0" />
 			</font>
@@ -75,32 +41,45 @@
 				</ImageView>
 			</graphic>
 		</Hyperlink>
-		<Text fx:id="TextMeineFelder" layoutX="205.0" layoutY="84.0"
-			onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE"
-			strokeWidth="0.0" styleClass="menu" text="Meine Felder">
-			<font>
-				<Font size="24.0" />
-			</font>
-		</Text>
 		<Group layoutX="309.0" layoutY="203.0">
 			<children>
-				<TextField layoutX="38.0" prefHeight="26.0"
-					prefWidth="549.0" text="Stadt oder PLZ" />
+				<TextField layoutX="38.0" prefHeight="26.0" prefWidth="549.0" text="Stadt oder PLZ" />
 				<ImageView fitHeight="26.0" fitWidth="26.0" layoutX="12.0">
 					<image>
 						<Image url="@IMG/Lupe.png" />
 					</image>
 				</ImageView>
-				<Button layoutX="532.0" layoutY="1.0" mnemonicParsing="false"
-					text="Suchen" />
+				<Button layoutX="532.0" layoutY="1.0" mnemonicParsing="false" text="Suchen" />
 			</children>
 		</Group>
-		<ImageView fitHeight="366.0" fitWidth="371.0"
-			layoutX="522.0" layoutY="267.0" pickOnBounds="true"
-			preserveRatio="true" AnchorPane.topAnchor="267.0">
+		<ImageView fitHeight="366.0" fitWidth="371.0" layoutX="522.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="267.0">
 			<image>
 				<Image url="@IMG/FFM.png" />
 			</image>
 		</ImageView>
+      <HBox alignment="CENTER" layoutX="34.0" layoutY="23.0" prefHeight="100.0" prefWidth="588.0" spacing="30.0">
+         <children>
+      		<Text fx:id="TextMenu" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Menü">
+      			<font>
+      				<Font size="24.0" />
+      			</font>
+      		</Text>
+      		<Text fx:id="TextMeineFelder" onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Meine Felder">
+      			<font>
+      				<Font size="24.0" />
+      			</font>
+      		</Text>
+      		<Text fx:id="TextVerpachten" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Verpachtete Felder">
+      			<font>
+      				<Font size="24.0" />
+      			</font>
+      		</Text>
+      		<Text fx:id="TextStammdaten" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Stammdaten">
+      			<font>
+      				<Font size="24.0" />
+      			</font>
+      		</Text>
+         </children>
+      </HBox>
 	</children>
 </AnchorPane>
