@@ -21,7 +21,7 @@
                <children>
                   <Group fx:id="GroupField1">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
                            <font>
                               <Font size="28.0" />
@@ -46,8 +46,8 @@
                   </Group>
                   <Group fx:id="GroupField2">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
-                        <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
+                        <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 2">
                            <font>
                               <Font size="28.0" />
                            </font>
@@ -71,8 +71,8 @@
                   </Group>
                   <Group fx:id="GroupField3">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
-                        <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
+                        <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 3">
                            <font>
                               <Font size="28.0" />
                            </font>
