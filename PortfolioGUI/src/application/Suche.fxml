@@ -18,17 +18,17 @@
             <Image url="@IMG/img_banner_top.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="86.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menü">
+      <Text fx:id="TextMenu" layoutX="86.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" text="Menü">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Text layoutX="422.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtete Felder">
+      <Text fx:id="TextVerpachten" layoutX="422.0" layoutY="83.0" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtete Felder">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Text layoutX="701.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
+      <Text fx:id="TextStammdaten" layoutX="701.0" layoutY="85.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
          <font>
             <Font size="24.0" />
          </font>
@@ -45,7 +45,7 @@
             </ImageView>
          </graphic>
       </Hyperlink>
-      <Text layoutX="205.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Felder">
+      <Text fx:id="TextMeineFelder" layoutX="205.0" layoutY="84.0" onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Felder">
          <font>
             <Font size="24.0" />
          </font>

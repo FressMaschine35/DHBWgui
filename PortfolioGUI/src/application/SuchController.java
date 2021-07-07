@@ -17,6 +17,8 @@ public class SuchController {
 	@FXML
 	private Text TextMenu;
 	@FXML
+	private Text TextMeineFelder;
+	@FXML
 	private Text TextVerpachten;
 	@FXML
 	private Text TextStammdaten;
