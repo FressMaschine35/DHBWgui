@@ -27,9 +27,9 @@
          <children>
             <HBox alignment="CENTER" prefHeight="309.0" prefWidth="1280.0" spacing="140.0">
                <children>
-                  <Group fx:id="buttonGarten" accessibleRole="BUTTON" onMouseClicked="#clickButtonGarten">
+                  <Group fx:id="buttonGarten" accessibleRole="BUTTON" onMouseClicked="#clickButtonGarten" styleClass="auswahl">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" styleClass="auswahl" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
                         <Text layoutX="423.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Gärten">
                            <font>
@@ -43,9 +43,9 @@
                         </ImageView>
                      </children>
                   </Group>
-                  <Group fx:id="buttonVerpachtung" onMouseClicked="#clickButtonVerpachtung">
+                  <Group fx:id="buttonVerpachtung" onMouseClicked="#clickButtonVerpachtung" styleClass="auswahl">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" styleClass="auswahl" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
                         <Text layoutX="423.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtung">
                            <font>
@@ -63,9 +63,9 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="296.0" prefWidth="1280.0" spacing="140.0">
                <children>
-                  <Group fx:id="buttonStammdaten" onMouseClicked="#clickButtonStammdaten">
+                  <Group fx:id="buttonStammdaten" onMouseClicked="#clickButtonStammdaten" styleClass="auswahl">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" styleClass="auswahl" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
                         <Text layoutX="423.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
                            <font>
@@ -79,9 +79,9 @@
                         </ImageView>
                      </children>
                   </Group>
-                  <Group fx:id="buttonSuchen" onMouseClicked="#clickButtonSuche">
+                  <Group fx:id="buttonSuchen" onMouseClicked="#clickButtonSuche" styleClass="auswahl">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" styleClass="auswahl" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
                         <Text layoutX="445.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suche">
                            <font>

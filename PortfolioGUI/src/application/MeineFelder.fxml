@@ -118,22 +118,22 @@
             </ImageView>
          </graphic>
       </Hyperlink>
-      <Text fx:id="TextMenu" layoutX="116.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" text="Menü">
+      <Text id="menu" fx:id="TextMenu" layoutX="116.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Menü">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Text fx:id="TextVerpachten" layoutX="220.0" layoutY="84.0" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtete Felder">
+      <Text id="menu" fx:id="TextVerpachten" layoutX="220.0" layoutY="84.0" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Verpachtete Felder">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Text fx:id="TextStammdaten" layoutX="483.0" layoutY="84.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
+      <Text id="menu" fx:id="TextStammdaten" layoutX="483.0" layoutY="84.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Stammdaten">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Text fx:id="TextSuche" layoutX="682.0" layoutY="84.0" onMouseClicked="#clickTextSuche" strokeType="OUTSIDE" strokeWidth="0.0" text="Suche">
+      <Text id="menu" fx:id="TextSuche" layoutX="682.0" layoutY="84.0" onMouseClicked="#clickTextSuche" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Suche">
          <font>
             <Font size="24.0" />
          </font>

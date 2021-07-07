@@ -10,3 +10,18 @@
 	-fx-background-color: #ffffff;
 	
 }
+.menu{
+	
+	-fx-fill: #000000;
+	
+}
+.menu:hover{
+	
+	-fx-fill: #e28743;
+	
+}
+
+.auswahl:hover{
+
+	
+}
