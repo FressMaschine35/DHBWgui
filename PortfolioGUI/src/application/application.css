@@ -18,6 +18,7 @@
 .menu:hover{
 	
 	-fx-underline: true;
+	-fx-font-weight: bold;
 	
 }
 
