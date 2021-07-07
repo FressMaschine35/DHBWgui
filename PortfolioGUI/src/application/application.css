@@ -22,7 +22,7 @@
 }
 
 .auswahl:hover{
-	-fx-fill: #000000;
+	-fx-effect: dropshadow(two-pass-box,rgba(0,0,0,1), 10, 0, 10,10);
 
 	
 }
