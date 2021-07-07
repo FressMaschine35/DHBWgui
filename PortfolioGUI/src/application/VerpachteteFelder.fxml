@@ -106,7 +106,7 @@
 				<Image url="@IMG/img_banner_top.jpg" />
 			</image>
 		</ImageView>
-		<Hyperlink fx:id="HyperlinkAbmelden" layoutX="1047.0" layoutY="53.0" onAction="#clickHyperlinkAbmelden" prefHeight="45.0" prefWidth="171.0" text="Abmelden">
+		<Hyperlink fx:id="HyperlinkAbmelden" layoutX="1047.0" layoutY="53.0" onAction="#clickHyperlinkAbmelden" prefHeight="45.0" prefWidth="171.0" styleClass="exit" text="Abmelden">
 			<font>
 				<Font size="24.0" />
 			</font>

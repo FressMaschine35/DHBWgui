@@ -25,3 +25,12 @@
 
 	
 }
+
+.exit{
+	-fx-text-fill: #000000;
+
+}
+
+.exit:hover{
+	-fx-text-fill: #063970;
+}
