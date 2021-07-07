@@ -31,7 +31,7 @@ public class SuchController {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Menue.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
-		
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(secondWindowScene);
 		window.show();
@@ -46,12 +46,24 @@ public class SuchController {
 		window.setScene(secondWindowScene);
 		window.show();
 	}
+	
+	@FXML
+	public void clickTextVerpachten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("VerpachteteFelder.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
+	
 	@FXML
 	public void clickTextStammdaten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Stammdaten.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
-		
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(secondWindowScene);
 		window.show();

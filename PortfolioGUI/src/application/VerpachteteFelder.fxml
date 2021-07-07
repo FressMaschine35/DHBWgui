@@ -118,22 +118,22 @@
 				</ImageView>
 			</graphic>
 		</Hyperlink>
-		<Text fx:id="TextMenu" layoutX="116.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" text="Menü">
+		<Text fx:id="TextMenu" layoutX="116.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Menü">
 			<font>
 				<Font size="24.0" />
 			</font>
 		</Text>
-		<Text fx:id="TextMeineFelder" layoutX="220.0" layoutY="84.0" onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Felder">
+		<Text fx:id="TextMeineFelder" layoutX="220.0" layoutY="84.0" onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Meine Felder">
 			<font>
 				<Font size="24.0" />
 			</font>
 		</Text>
-		<Text fx:id="TextStammdaten" layoutX="483.0" layoutY="84.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
+		<Text fx:id="TextStammdaten" layoutX="483.0" layoutY="84.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Stammdaten">
 			<font>
 				<Font size="24.0" />
 			</font>
 		</Text>
-		<Text fx:id="TextSuche" layoutX="682.0" layoutY="84.0" onMouseClicked="#clickTextSuche" strokeType="OUTSIDE" strokeWidth="0.0" text="Suche">
+		<Text fx:id="TextSuche" layoutX="682.0" layoutY="84.0" onMouseClicked="#clickTextSuche" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Suche">
 			<font>
 				<Font size="24.0" />
 			</font>
