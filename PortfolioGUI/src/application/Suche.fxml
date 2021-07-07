@@ -18,17 +18,12 @@
             <Image url="@IMG/img_banner_top.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="321.0" fitWidth="344.0" layoutX="466.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="126.0">
-         <image>
-            <Image url="@IMG/FFM.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="233.0" fitWidth="241.0" layoutX="65.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="110.0">
+      <ImageView fitHeight="201.0" fitWidth="174.0" layoutX="348.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="272.84071350097656" AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="267.0">
          <image>
             <Image url="@IMG/Heidelberg.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="233.0" fitWidth="235.0" layoutX="862.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="127.0" AnchorPane.rightAnchor="110.0">
+      <ImageView fitHeight="186.0" fitWidth="227.0" layoutX="348.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="87.0" AnchorPane.rightAnchor="757.525634765625" AnchorPane.topAnchor="447.0">
          <image>
             <Image url="@IMG/Mannheim.jpg" />
          </image>
@@ -60,7 +55,6 @@
             </ImageView>
          </graphic>
       </Hyperlink>
-      <Button layoutX="1183.0" layoutY="254.0" mnemonicParsing="false" text="Suchen" />
       <Text layoutX="205.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Felder">
          <font>
             <Font size="24.0" />
@@ -69,12 +63,18 @@
       <Group layoutX="309.0" layoutY="203.0">
          <children>
             <TextField layoutX="38.0" prefHeight="26.0" prefWidth="549.0" text="Stadt oder PLZ" />
-            <ImageView fitHeight="26.0" fitWidth="26.0">
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="12.0">
                <image>
                   <Image url="@IMG/transparent-app-icon-essential-icon-search-icon-5d6b53247d5587.4482907415673147245134.jpg" />
                </image>
             </ImageView>
+            <Button layoutX="532.0" layoutY="1.0" mnemonicParsing="false" text="Suchen" />
          </children>
       </Group>
+      <ImageView fitHeight="366.0" fitWidth="371.0" layoutX="522.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="267.0">
+         <image>
+            <Image url="@IMG/FFM.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
