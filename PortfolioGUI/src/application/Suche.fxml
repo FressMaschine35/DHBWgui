@@ -65,7 +65,7 @@
             <TextField layoutX="38.0" prefHeight="26.0" prefWidth="549.0" text="Stadt oder PLZ" />
             <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="12.0">
                <image>
-                  <Image url="@IMG/transparent-app-icon-essential-icon-search-icon-5d6b53247d5587.4482907415673147245134.jpg" />
+                  <Image url="@IMG/Lupe.png" />
                </image>
             </ImageView>
             <Button layoutX="532.0" layoutY="1.0" mnemonicParsing="false" text="Suchen" />
