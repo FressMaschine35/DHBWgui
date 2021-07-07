@@ -57,7 +57,7 @@ public class MenuController {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Stammdaten.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
-		
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(secondWindowScene);
 		window.show();
@@ -69,11 +69,24 @@ public class MenuController {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Suche.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
-		
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(secondWindowScene);
 		window.show();
 		
+	}
+	
+	@FXML
+	public void clickHyperlinkAbmelden (@SuppressWarnings("exports") ActionEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Logout.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		Stage window2=new Stage();
+		window2.setScene(secondWindowScene);
+		window2.show();
+		window.close();
 	}
 	
 	

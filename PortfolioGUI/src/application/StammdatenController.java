@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class StammdatenController {
@@ -21,10 +22,63 @@ public class StammdatenController {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Menue.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
-		
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(secondWindowScene);
 		window.show();
 		
+	}
+	@FXML
+	public void clickTextMenu (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Menue.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
+	@FXML
+	public void clickTextMeineFelder (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("MeineFelder.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
+	
+	@FXML
+	public void clickTextVerpachten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("VerpachteteFelder.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
+	@FXML
+	public void clickTextSuche (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Suche.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
+	@FXML
+	public void clickHyperlinkAbmelden (@SuppressWarnings("exports") ActionEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Logout.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		Stage window2=new Stage();
+		window2.setScene(secondWindowScene);
+		window2.show();
+		window.close();
 	}
 }
