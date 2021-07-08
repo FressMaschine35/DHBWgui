@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
@@ -20,12 +21,15 @@ public class Main extends Application {
 	@SuppressWarnings("exports")
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		
+		Image titleImg = new Image(getClass().getResourceAsStream("intelligente-landwirtschaft.png"));
 
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));		
 			//BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Login.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.getIcons().add(titleImg);
 			primaryStage.setTitle("Urbane Stadtgärten");
 			primaryStage.setResizable(false);
 			primaryStage.setMinHeight(400.00);
