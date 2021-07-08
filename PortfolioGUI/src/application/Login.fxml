@@ -26,28 +26,18 @@
    <center>
       <AnchorPane prefHeight="400.0" prefWidth="323.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField id="userField" fx:id="userField" layoutX="80.0" layoutY="123.0" prefHeight="25.0" prefWidth="170.0" promptText="Benutzer" />
-            <PasswordField id="userPassword" fx:id="userPassword" layoutX="80.0" layoutY="163.0" prefHeight="25.0" prefWidth="171.0" promptText="Passwort" />
-            <Button id="lbutton" fx:id="lbutton" layoutX="197.0" layoutY="203.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="25.0" prefWidth="53.0" text="Login" />
-            <Label fx:id="loginField" layoutX="81.0" layoutY="66.0" text="Login">
+            <TextField id="userField" fx:id="userField" layoutX="74.0" layoutY="135.0" prefHeight="25.0" prefWidth="170.0" promptText="Benutzer" />
+            <PasswordField id="userPassword" fx:id="userPassword" layoutX="74.0" layoutY="175.0" prefHeight="25.0" prefWidth="171.0" promptText="Passwort" />
+            <Button id="lbutton" fx:id="lbutton" layoutX="191.0" layoutY="215.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="25.0" prefWidth="53.0" text="Login" />
+            <Label fx:id="loginField" layoutX="72.0" layoutY="67.0" text="Login">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label fx:id="warningLable" layoutX="87.0" layoutY="109.0" textFill="#d70c0c" />
+            <Label fx:id="warningLable" layoutX="75.0" layoutY="111.0" prefHeight="18.0" prefWidth="166.0" textFill="#d70c0c" />
             <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="53.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="54.0" layoutY="123.0">
-               <image>
-                  <Image url="@../../../../../../Pictures/1664627.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="55.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="57.0" layoutY="163.0">
-               <image>
-                  <Image url="@../../../../../../Pictures/3358056.png" />
-               </image>
-            </ImageView>
-            <Hyperlink layoutX="82.0" layoutY="200.0" text="Passwort vergessen?" />
+            <Hyperlink layoutX="72.0" layoutY="219.0" text="Passwort vergessen?" />
          </children>
       </AnchorPane>
    </center>
