@@ -51,7 +51,7 @@
                         </Text>
                         <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="403.0" layoutY="60.0">
                            <image>
-                              <Image url="@IMG/landwirtschaft.png" />
+                              <Image url="@IMG/landwirtschaft%20(1).png" />
                            </image>
                         </ImageView>
                      </children>
@@ -87,7 +87,7 @@
                         </Text>
                         <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
                            <image>
-                              <Image url="@IMG/offenes-buch.png" />
+                              <Image url="@IMG/landwirtschaft%20(2).png" />
                            </image>
                         </ImageView>
                      </children>
