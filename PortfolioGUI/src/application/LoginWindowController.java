@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class LoginWindowController {
@@ -39,12 +40,17 @@ public class LoginWindowController {
 
 	@FXML
 	private void checkLogin(ActionEvent event) throws IOException{
+		
+		Image titleImg = new Image(getClass().getResourceAsStream("intelligente-landwirtschaft.png"));
+		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Menue.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
 		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-		Stage window2=new Stage();
 		
+		Stage window2=new Stage();
+		window2.getIcons().add(titleImg);
+		window2.setTitle("Urbane Gärten");
 		
 		
 		

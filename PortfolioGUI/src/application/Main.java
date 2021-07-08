@@ -30,7 +30,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.getIcons().add(titleImg);
-			primaryStage.setTitle("Urbane Stadtgärten");
+			primaryStage.setTitle("Urbane Gärten");
 			primaryStage.setResizable(false);
 			primaryStage.setMinHeight(400.00);
 			primaryStage.setMinWidth(500.00);
