@@ -121,10 +121,17 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="1062.0">
                      <children>
-                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" prefHeight="53.0" prefWidth="147.0" text="Abbrechen">
+                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" prefHeight="46.0" prefWidth="156.0" text="Abbrechen">
                            <font>
                               <Font size="20.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0">
+                                 <image>
+                                    <Image url="@IMG/Abbruch-IMG.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Button>
                      </children>
                   </HBox>
