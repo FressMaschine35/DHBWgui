@@ -7,32 +7,18 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SuchController">
    <children>
       <Group layoutX="503.0" layoutY="203.0" />
-      <ImageView fitHeight="282.0" fitWidth="1280.0" layoutY="-151.0" opacity="0.6">
+      <ImageView fitHeight="373.0" fitWidth="1286.0" layoutX="-3.0" layoutY="-215.0" opacity="0.6">
          <image>
             <Image url="@IMG/img_banner_top.jpg" />
          </image>
       </ImageView>
-      <Text fx:id="TextMenu" layoutX="86.0" layoutY="84.0" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" text="Menü">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text fx:id="TextVerpachten" layoutX="422.0" layoutY="83.0" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" text="Verpachtete Felder">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text fx:id="TextStammdaten" layoutX="701.0" layoutY="85.0" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" text="Stammdaten">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
       <Hyperlink fx:id="HyperlinkAbmelden" layoutX="1092.0" layoutY="52.0" onAction="#clickHyperlinkAbmelden" prefHeight="46.0" prefWidth="154.0" text="Abmelden">
          <font>
             <Font size="24.0" />
@@ -45,19 +31,9 @@
             </ImageView>
          </graphic>
       </Hyperlink>
-      <Text fx:id="TextMeineFelder" layoutX="205.0" layoutY="84.0" onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Felder">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
       <Group layoutX="300.0" layoutY="246.0" />
       <TextField layoutX="373.0" layoutY="203.0" prefHeight="26.0" prefWidth="458.0" text="Stadt oder PLZ" />
       <Button layoutX="826.0" layoutY="203.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="61.0" text="Suchen" />
-      <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="348.0" layoutY="203.0">
-         <image>
-            <Image url="@IMG/transparent-app-icon-essential-icon-search-icon-5d6b53247d5587.4482907415673147245134.jpg" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="225.0" fitWidth="217.0" layoutX="930.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="145.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="350.0">
          <image>
             <Image url="@IMG/Mannheim.jpg" />
@@ -73,5 +49,34 @@
             <Image url="@IMG/Heidelberg.jpg" />
          </image>
       </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="349.0" layoutY="206.0" preserveRatio="true">
+         <image>
+            <Image url="@IMG/Lupe.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="52.0" layoutY="26.0" prefHeight="100.0" prefWidth="588.0" spacing="30.0">
+         <children>
+            <Text id="menu" fx:id="TextMenu1" onMouseClicked="#clickTextMenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Menü">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="TextMeineFelder" onMouseClicked="#clickTextMeineFelder" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Meine Felder">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text id="menu" fx:id="TextVerpachten1" onMouseClicked="#clickTextVerpachten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Verpachtete Felder">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text id="menu" fx:id="TextStammdaten1" onMouseClicked="#clickTextStammdaten" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Stammdaten">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

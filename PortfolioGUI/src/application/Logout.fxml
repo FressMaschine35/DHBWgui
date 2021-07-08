@@ -5,14 +5,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="r" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogoutWindowController">
+<Pane fx:id="r" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogoutWindowController">
    <children>
       <Text fx:id="logoutMessage" layoutX="388.0" layoutY="256.0" text="Sie wurden erfolgreich abgemeldet!">
          <font>
             <Font size="32.0" />
          </font>
       </Text>
-      <Hyperlink fx:id="redirectLink" onAction="#clickRedirectLink" layoutX="722.0" layoutY="280.0" text="Zurück zum Login">
+      <Hyperlink fx:id="redirectLink" layoutX="722.0" layoutY="280.0" onAction="#clickRedirectLink" text="Zurück zum Login">
          <font>
             <Font size="20.0" />
          </font>

@@ -45,3 +45,6 @@ Hyperlink {
 .exit:hover{
 	-fx-text-fill: #063970;
 }
+.panecolor{
+	-fx-background-color: #ffffff;
+}
