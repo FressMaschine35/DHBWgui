@@ -104,6 +104,9 @@
                         <Line endX="100.0" layoutX="781.0" layoutY="1.0" startX="-100.0" />
                         <Line endX="100.0" layoutX="1098.0" startX="-7.4000244140625" startY="-2.136230432370212E-5" />
                      </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
                   </Group>
 					</children>
 				</VBox>
