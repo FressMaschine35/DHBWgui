@@ -73,7 +73,7 @@
                            </children>
                         </Group>
                         <RadioButton mnemonicParsing="false" text="Habe keine Felder zu vermieten" />
-                        <Button fx:id="stammButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Speichern">
+                        <Button fx:id="ButtonSpeichern" mnemonicParsing="false" onAction="#clickButtonSpeichern" prefHeight="26.0" prefWidth="102.0" text="Speichern">
                            <graphic>
                               <ImageView fitHeight="25.0" fitWidth="25.0">
                                  <image>
@@ -85,6 +85,7 @@
                               <Insets top="5.0" />
                            </VBox.margin>
                         </Button>
+                        <Label fx:id="warningLable" prefHeight="17.0" prefWidth="214.0" textFill="#2b862b" />
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="640.0" spacing="10.0">
@@ -136,7 +137,7 @@
                               <Label layoutY="9.0" text="BIC" />
                            </children>
                         </Group>
-                        <Button fx:id="zahlungsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Speichern">
+                        <Button fx:id="ButtonSpeichern1" mnemonicParsing="false" onAction="#clickButtonSpeichern1" prefHeight="26.0" prefWidth="102.0" text="Speichern">
                            <graphic>
                               <ImageView fitHeight="25.0" fitWidth="25.0">
                                  <image>
@@ -148,6 +149,7 @@
                               <Insets top="45.0" />
                            </VBox.margin>
                         </Button>
+                        <Label fx:id="warningLable1" prefHeight="17.0" prefWidth="222.0" textFill="#2b862b" />
                      </children>
                   </VBox>
                </children>

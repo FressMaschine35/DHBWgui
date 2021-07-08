@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
@@ -24,7 +25,8 @@ public class SuchController {
 	private Text TextStammdaten;
 	@FXML
 	private Hyperlink HyperlinkAbmelden;
-	
+	@FXML
+	private Button ButtonSuche;
 	
 	
 	
@@ -88,9 +90,19 @@ public class SuchController {
 		Scene secondWindowScene=new Scene(secondWindowParent);
 		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-		Stage window2=new Stage();
-		window2.setScene(secondWindowScene);
-		window2.show();
-		window.close();
+		window.setScene(secondWindowScene);
+		window.show();
+		
+	}
+	@FXML
+	public void clickButtonSuche (@SuppressWarnings("exports") ActionEvent event) throws IOException {
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldPachten.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+		
 	}
 }

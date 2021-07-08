@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -16,6 +17,15 @@ public class StammdatenController {
 	
 	@FXML
 	private Button ButtonAbbrechen;
+	@FXML
+	private Button ButtonSpeichern;
+	@FXML
+	private Label warningLable;
+	@FXML
+	private Button ButtonSpeichern1;
+	@FXML
+	private Label warningLable1;
+	
 	
 	@FXML
 	public void clickButtonAbbrechen (@SuppressWarnings("exports") ActionEvent event) throws IOException {
@@ -80,5 +90,15 @@ public class StammdatenController {
 		window2.setScene(secondWindowScene);
 		window2.show();
 		window.close();
+	}
+	@FXML
+	public void clickButtonSpeichern (@SuppressWarnings("exports") ActionEvent event) throws IOException {
+		warningLable.setText("Daten erfolgreich gespeichert");
+		
+	}
+	@FXML
+	public void clickButtonSpeichern1 (@SuppressWarnings("exports") ActionEvent event) throws IOException {
+		warningLable1.setText("Daten erfolgreich gespeichert");
+		
 	}
 }
