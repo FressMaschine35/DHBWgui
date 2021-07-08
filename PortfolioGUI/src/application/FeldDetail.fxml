@@ -164,13 +164,6 @@
                      </HBox.margin>
                   </VBox>
                   <VBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="616.0">
-                     <children>
-                        <Button fx:id="ButtonMieten" mnemonicParsing="false" onAction="#clickButtonMieten" prefHeight="45.0" prefWidth="129.0" text="Kontakt">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Button>
-                     </children>
                      <HBox.margin>
                         <Insets top="20.0" />
                      </HBox.margin>
