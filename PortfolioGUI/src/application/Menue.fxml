@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,23 +12,35 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <ImageView fitHeight="256.0" fitWidth="1291.0" layoutY="-141.0" opacity="0.5">
+      <ImageView fitHeight="373.0" fitWidth="1286.0" layoutX="-3.0" layoutY="-215.0" opacity="0.5">
          <image>
             <Image url="@IMG/img_banner_top.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="labelWelcome" layoutX="20.0" layoutY="26.0" text="Willkommen, ">
+      <Label fx:id="labelWelcome" layoutX="52.0" layoutY="26.0" text="Willkommen!">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <VBox layoutY="115.0" prefHeight="605.0" prefWidth="1280.0">
+       <Hyperlink fx:id="HyperlinkAbmelden" layoutX="1063.0" layoutY="30.0" onAction="#clickHyperlinkAbmelden" prefHeight="45.0" prefWidth="171.0" styleClass="exit" text="Abmelden">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0">
+               <image>
+                  <Image url="@IMG/Abmelden.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <VBox layoutY="157.0" prefHeight="563.0" prefWidth="1280.0">
          <children>
             <HBox alignment="CENTER" prefHeight="309.0" prefWidth="1280.0" spacing="140.0">
                <children>
-                  <Group fx:id="buttonGarten" accessibleRole="BUTTON" onMouseClicked="#clickButtonGarten">
+                  <Group fx:id="buttonGarten" accessibleRole="BUTTON" onMouseClicked="#clickButtonGarten" styleClass="auswahl">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
@@ -38,12 +51,12 @@
                         </Text>
                         <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="403.0" layoutY="60.0">
                            <image>
-                              <Image url="@IMG/landwirtschaft.png" />
+                              <Image url="@IMG/landwirtschaft%20(1).png" />
                            </image>
                         </ImageView>
                      </children>
                   </Group>
-                  <Group fx:id="buttonVerpachtung" onMouseClicked="#clickButtonVerpachtung">
+                  <Group fx:id="buttonVerpachtung" onMouseClicked="#clickButtonVerpachtung" styleClass="auswahl">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
@@ -63,7 +76,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="296.0" prefWidth="1280.0" spacing="140.0">
                <children>
-                  <Group fx:id="buttonStammdaten" onMouseClicked="#clickButtonStammdaten">
+                  <Group fx:id="buttonStammdaten" onMouseClicked="#clickButtonStammdaten" styleClass="auswahl">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />
@@ -74,12 +87,12 @@
                         </Text>
                         <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="400.0" layoutY="60.0">
                            <image>
-                              <Image url="@IMG/offenes-buch.png" />
+                              <Image url="@IMG/landwirtschaft%20(2).png" />
                            </image>
                         </ImageView>
                      </children>
                   </Group>
-                  <Group fx:id="buttonSuchen" onMouseClicked="#clickButtonSuche">
+                  <Group fx:id="buttonSuchen" onMouseClicked="#clickButtonSuche" styleClass="auswahl">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="340.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="250.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab99" height="50.0" layoutX="341.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="248.0" />

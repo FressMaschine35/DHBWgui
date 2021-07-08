@@ -7,6 +7,44 @@
 }
 #background{
 	
-	-fx-background-color: white;
+	-fx-background-color: #ffffff;
 	
+}
+
+Hyperlink {
+	-fx-border-color: transparent;
+}
+
+.menu{
+	
+	-fx-fill: #000000;
+	
+}
+.menu:hover{
+	
+	-fx-underline: true;
+	-fx-font-weight: bold;
+	
+}
+
+.auswahl:hover{
+	-fx-effect: dropshadow(two-pass-box,rgba(0,0,0,1), 10, 0, 10,10);
+
+}
+
+.auswahl2:hover{
+	-fx-effect: dropshadow(two-pass-box,rgba(0,0,0,1), 5, 0, 5,5);
+}
+
+
+.exit{
+	-fx-text-fill: #000000;
+
+}
+
+.exit:hover{
+	-fx-text-fill: #063970;
+}
+.panecolor{
+	-fx-background-color: #ffffff;
 }

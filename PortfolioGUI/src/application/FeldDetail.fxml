@@ -26,7 +26,7 @@
                <children>
                   <VBox prefHeight="660.0" prefWidth="528.0" spacing="10.0">
                      <children>
-                        <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="190.0" prefWidth="460.0" text="Feldbezeichnung">
+                        <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="190.0" prefWidth="460.0" text="Felddetails">
                            <font>
                               <Font name="System Bold" size="44.0" />
                            </font>
@@ -40,7 +40,7 @@
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Vorname Nachname" wrappingWidth="279.13671875">
+                                    <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Gertrud Müller" wrappingWidth="279.13671875">
                                        <font>
                                           <Font name="System Bold" size="25.0" />
                                        </font>
@@ -54,7 +54,7 @@
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <Text fx:id="TextFlaeche" strokeType="OUTSIDE" strokeWidth="0.0" text="Fläche in m²" wrappingWidth="279.13671875">
+                                    <Text fx:id="TextFlaeche" strokeType="OUTSIDE" strokeWidth="0.0" text="60 m2" wrappingWidth="279.13671875">
                                        <font>
                                           <Font size="25.0" />
                                        </font>
@@ -68,7 +68,7 @@
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <DatePicker prefHeight="38.0" prefWidth="276.0" />
+                                    <DatePicker prefHeight="38.0" prefWidth="276.0" promptText="20/07/2021" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
@@ -78,7 +78,7 @@
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <DatePicker prefHeight="38.0" prefWidth="276.0" />
+                                    <DatePicker prefHeight="38.0" prefWidth="276.0" promptText="20/08/2021" />
                                  </children>
                               </HBox>
                            </children>
@@ -97,12 +97,12 @@
                                     </Label>
                                     <VBox prefHeight="71.0" prefWidth="330.0">
                                        <children>
-                                          <Text fx:id="TextStrNr" strokeType="OUTSIDE" strokeWidth="0.0" text="Straße Nr." wrappingWidth="310.13671875">
+                                          <Text fx:id="TextStrNr" strokeType="OUTSIDE" strokeWidth="0.0" text="Hauptwache 23" wrappingWidth="310.13671875">
                                              <font>
                                                 <Font size="25.0" />
                                              </font>
                                           </Text>
-                                          <Text fx:id="TextPLZStadt" strokeType="OUTSIDE" strokeWidth="0.0" text="PLZ Stadt" wrappingWidth="310.13671875">
+                                          <Text fx:id="TextPLZStadt" strokeType="OUTSIDE" strokeWidth="0.0" text="60306 Frankfurt am Main" wrappingWidth="310.13671875">
                                              <font>
                                                 <Font size="25.0" />
                                              </font>
@@ -153,7 +153,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="604.0">
                      <children>
-                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="45.0" prefWidth="142.0" text="Abbrechen">
+                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="45.0" prefWidth="142.0" text="Zurück">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -164,13 +164,6 @@
                      </HBox.margin>
                   </VBox>
                   <VBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="616.0">
-                     <children>
-                        <Button fx:id="ButtonMieten" mnemonicParsing="false" onAction="#clickButtonMieten" prefHeight="45.0" prefWidth="129.0" text="Mieten">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Button>
-                     </children>
                      <HBox.margin>
                         <Insets top="20.0" />
                      </HBox.margin>
