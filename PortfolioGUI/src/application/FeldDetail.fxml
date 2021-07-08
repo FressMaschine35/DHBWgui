@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeldMietenController">
+   <children>
+      <ImageView fitHeight="373.0" fitWidth="1293.0" layoutY="-205.0" opacity="0.6">
+         <image>
+            <Image url="@IMG/img_banner_top.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="488.0" layoutY="326.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <HBox prefHeight="608.0" prefWidth="1220.0">
+               <children>
+                  <VBox prefHeight="660.0" prefWidth="528.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="190.0" prefWidth="460.0" text="Felddetails">
+                           <font>
+                              <Font name="System Bold" size="44.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="528.0">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="136.0" text="Verpächter:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Gertrud Müller" wrappingWidth="279.13671875">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="84.0" text="Fläche:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="TextFlaeche" strokeType="OUTSIDE" strokeWidth="0.0" text="60 m2" wrappingWidth="279.13671875">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="63.0" text="Von:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker prefHeight="38.0" prefWidth="276.0" promptText="20/07/2021" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="51.0" text="Bis:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker prefHeight="38.0" prefWidth="276.0" promptText="20/08/2021" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="317.0" prefWidth="528.0" spacing="20.0">
+                           <children>
+                              <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="458.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="114.0" text="Adresse:">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets left="10.0" />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <VBox prefHeight="71.0" prefWidth="330.0">
+                                       <children>
+                                          <Text fx:id="TextStrNr" strokeType="OUTSIDE" strokeWidth="0.0" text="Hauptwache 23" wrappingWidth="310.13671875">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="TextPLZStadt" strokeType="OUTSIDE" strokeWidth="0.0" text="60306 Frankfurt am Main" wrappingWidth="310.13671875">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <WebView fx:id="WebMaps" prefHeight="172.0" prefWidth="392.0">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" />
+                                 </VBox.margin>
+                              </WebView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="469.0" prefWidth="700.0" spacing="20.0">
+                     <children>
+                        <HBox prefHeight="153.0" prefWidth="700.0" />
+                        <ImageView fitHeight="262.0" fitWidth="406.0" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG/dachgarten1.jpg" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="173.0" prefWidth="700.0" spacing="40.0">
+                           <children>
+                              <ImageView fitHeight="171.0" fitWidth="282.0">
+                                 <image>
+                                    <Image url="@IMG/dachgarten2.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="ImageSmallRight" fitHeight="183.0" fitWidth="257.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@IMG/dachgarten3.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="1220.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="604.0">
+                     <children>
+                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="45.0" prefWidth="142.0" text="Zurück">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="616.0">
+                     <children>
+                        <Button fx:id="ButtonMieten" mnemonicParsing="false" onAction="#clickButtonMieten" prefHeight="45.0" prefWidth="129.0" text="Kontakt">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
