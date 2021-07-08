@@ -21,7 +21,7 @@
          <content>
             <VBox id="background" fx:id="background" alignment="CENTER" prefHeight="562.0" prefWidth="1280.0" spacing="20.0">
                <children>
-                  <Group fx:id="GroupField1">
+                  <Group fx:id="GroupField1" accessibleRole="BUTTON" onMouseClicked="#clickFeldMieten">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
@@ -51,7 +51,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Group>
-                  <Group fx:id="GroupField11">
+                  <Group fx:id="GroupField11" accessibleRole="BUTTON" onMouseClicked="#clickFeldMieten">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 2">
@@ -78,7 +78,7 @@
                         <Line endX="100.0" layoutX="1098.0" startX="-7.4000244140625" startY="-2.136230432370212E-5" />
                      </children>
                   </Group>
-                  <Group fx:id="GroupField12">
+                  <Group fx:id="GroupField12" accessibleRole="BUTTON" onMouseClicked="#clickFeldMieten">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 3">

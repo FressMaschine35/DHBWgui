@@ -153,7 +153,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="604.0">
                      <children>
-                        <Button id="ButtonAbbrechen" mnemonicParsing="false" prefHeight="45.0" prefWidth="142.0" text="Abbrechen">
+                        <Button fx:id="ButtonAbbrechen" onAction="#clickButtonAbbrechen" mnemonicParsing="false" prefHeight="45.0" prefWidth="142.0" text="Abbrechen">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -165,7 +165,7 @@
                   </VBox>
                   <VBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="616.0">
                      <children>
-                        <Button id="ButtonMieten" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" text="Mieten">
+                        <Button fx:id="ButtonMieten" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" text="Mieten">
                            <font>
                               <Font size="20.0" />
                            </font>

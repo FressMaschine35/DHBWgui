@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,6 +13,17 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class FeldPachtenController {
+	
+	@FXML
+	private Group GroupField1;
+	
+	@FXML
+	private Group GroupField11;
+	
+	@FXML
+	private Group GroupField12;
+	
+	
 	@FXML
 	public void clickTextMenu (@SuppressWarnings("exports") MouseEvent event) throws IOException {
 		
@@ -58,6 +70,15 @@ public class FeldPachtenController {
 	public void clickTextSuche (@SuppressWarnings("exports") MouseEvent event) throws IOException {
 		
 		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("Suche.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
+	
+	public void clickFeldMieten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldMieten.fxml"));
 		Scene secondWindowScene=new Scene(secondWindowParent);
 		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
