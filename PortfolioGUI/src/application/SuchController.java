@@ -82,4 +82,15 @@ public class SuchController {
 		window2.show();
 		window.close();
 	}
+	@FXML
+	public void clickImage (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldPachten.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		Stage window2=new Stage();
+		window2.setScene(secondWindowScene);
+		window2.show();
+		window.close();
+	}
 }
