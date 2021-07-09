@@ -11,13 +11,46 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class FeldMietenController implements Initializable{
 
+	@FXML
+	private Label LabelFeldbezeichnung;
+	@FXML
+	private Text TextVorNachname;
+	@FXML
+	private Text TextFlaeche;
+	@FXML
+	private Text TextStrNr;
+	@FXML
+	private Text TextPLZStadt;
+	@FXML
+	private DatePicker DateStartDatum;
+	@FXML
+	private DatePicker DateEndDatum;
+	
+	
+	
+	
 	
 	public FeldMietenController() {
 		
+	}
+	public void initialize(){
+		
+	}
+	public void initData(Fields feldbezeichnung) {
+		LabelFeldbezeichnung.setText(feldbezeichnung.getFieldName());
+		TextFlaeche.setText(Double. toString(feldbezeichnung.getFlaeche())+" m²");
+		TextVorNachname.setText(feldbezeichnung.getOwnerName());
+		TextStrNr.setText(feldbezeichnung.getStreetAndNr());
+		TextPLZStadt.setText(feldbezeichnung.getPlzAndCity());
+		DateStartDatum.setPromptText(feldbezeichnung.getStartDate());
+		DateEndDatum.setPromptText(feldbezeichnung.getEndDate());
 	}
 	
 	@FXML
