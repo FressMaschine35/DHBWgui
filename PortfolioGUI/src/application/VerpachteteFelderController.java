@@ -108,4 +108,14 @@ public class VerpachteteFelderController {
 		window2.setScene(secondWindowScene);
 		window2.show();
 	}
+	@FXML
+	public void clickFeldAnlegen (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+			
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldVerpachten.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(secondWindowScene);
+		window.show();
+	}
 }
