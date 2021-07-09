@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeldMietenController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeldDetailController">
    <children>
       <ImageView fitHeight="373.0" fitWidth="1293.0" layoutY="-205.0" opacity="0.6">
          <image>

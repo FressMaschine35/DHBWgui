@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -25,7 +26,14 @@ public class MeineFelderController {
 	private Text TextSuche;
 	@FXML
 	private Hyperlink HyperlinkAbmelden;
+	@FXML
+	private Group GroupField1;
 	
+	@FXML
+	private Group GroupField11;
+	
+	@FXML
+	private Group GroupField12;
 	
 	
 	
@@ -84,5 +92,20 @@ public class MeineFelderController {
 		window2.setScene(secondWindowScene);
 		window2.show();
 		window.close();
+	}
+	@FXML
+	public void clickFeldDetail (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+Image titleImg = new Image(getClass().getResourceAsStream("intelligente-landwirtschaft.png"));
+		
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldDetail.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		Stage window2=new Stage();
+		window2.getIcons().add(titleImg);
+		window2.setTitle("Urbane Gärten");
+		window2.setScene(secondWindowScene);
+		window2.show();
 	}
 }
