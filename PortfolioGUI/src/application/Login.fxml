@@ -37,7 +37,7 @@
             <Label fx:id="warningLable" layoutX="75.0" layoutY="111.0" prefHeight="18.0" prefWidth="166.0" textFill="#d70c0c" />
             <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="53.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="55.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" />
-            <Hyperlink layoutX="72.0" layoutY="219.0" text="Passwort vergessen?" />
+            <Hyperlink fx:id="passwortVergessenLink" layoutX="72.0" layoutY="219.0" onAction="#clickPasswortVergessenLink" text="Passwort vergessen?" />
          </children>
       </AnchorPane>
    </center>
