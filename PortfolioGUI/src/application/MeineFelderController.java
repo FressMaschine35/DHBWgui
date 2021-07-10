@@ -35,6 +35,7 @@ public class MeineFelderController {
 	@FXML
 	private Group GroupField12;
 	
+	private FieldExamples fieldExamples=new FieldExamples();
 	
 	
 	@FXML
@@ -107,5 +108,32 @@ Image titleImg = new Image(getClass().getResourceAsStream("intelligente-landwirt
 		window2.setTitle("Urbane Gärten");
 		window2.setScene(secondWindowScene);
 		window2.show();
+	}
+	@FXML
+	public void clickFeldDetails1 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld1();
+		showFeldDetails(Feld, event);
+	}
+	@FXML
+	public void clickFeldDetails2 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld2();
+		showFeldDetails(Feld, event);
+	}
+	@FXML
+	public void clickFeldDetails3 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld3();
+		showFeldDetails(Feld, event);
+	}
+	public Stage showFeldDetails(Fields feldbezeichnung, MouseEvent event) throws IOException {
+		  FXMLLoader loader = new FXMLLoader(getClass().getResource("FeldDetail.fxml"));
+		  
+		  Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		  stage.setScene(new Scene(loader.load()));
+
+		  FeldDetailController controller = loader.getController();
+		  controller.initData(feldbezeichnung);
+		  
+		  stage.show();
+		  return stage;
 	}
 }

@@ -24,6 +24,7 @@ public class FeldPachtenController {
 	@FXML
 	private Group GroupField12;
 	
+	private FieldExamples fieldExamples=new FieldExamples();
 	
 	@FXML
 	public void clickTextMenu (@SuppressWarnings("exports") MouseEvent event) throws IOException {
@@ -79,26 +80,21 @@ public class FeldPachtenController {
 	}
 	@FXML
 	public void clickFeldMieten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
-//		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldMieten.fxml"));
-//		Scene secondWindowScene=new Scene(secondWindowParent);
-//		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-//		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-//		window.setScene(secondWindowScene);
-//		window.show();
-		Fields Feld1=new Fields("Grün über den Dächern Münchens", "20-02-2022", "20-02-2032","Heinz Müller", "Berliner Str. 2", "80805 München", 120.00);
-		showFeldMieten(Feld1, event);
+
+		Fields Feld=fieldExamples.getFeld1();
+		showFeldMieten(Feld, event);
 	}
 	
 	@FXML
 	public void clickFeldMieten2 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
-		Fields Feld2=new Fields("Schöner Dachgarten in Hamburg", "20-08-2021", "20-02-2031","Holla Waldfee", "Berliner Str. 2", "80805 München", 240.00);
-		showFeldMieten(Feld2, event);
+		Fields Feld=fieldExamples.getFeld2();
+		showFeldMieten(Feld, event);
 	}
 	
 	@FXML
 	public void clickFeldMieten3 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
-		Fields Feld3=new Fields("Garten ist Garten", "20-02-2022", "20-02-2032","Hans Wurst", "Berliner Str. 2", "80805 München", 155.00);
-		showFeldMieten(Feld3, event);
+		Fields Feld=fieldExamples.getFeld3();
+		showFeldMieten(Feld, event);
 	}
 		
 		
@@ -131,5 +127,5 @@ public class FeldPachtenController {
 		  stage.show();
 
 		  return stage;
-		}
+	}
 }

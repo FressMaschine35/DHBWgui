@@ -32,9 +32,12 @@ public class FeldDetailController implements Initializable{
 		private DatePicker DateStartDatum;
 		@FXML
 		private DatePicker DateEndDatum;
+		@FXML
+		private Label LabelOwnerPaechter;
 		
-		
-		
+
+
+		private String Weiterleitung;
 		
 		
 		public FeldDetailController() {
@@ -51,19 +54,37 @@ public class FeldDetailController implements Initializable{
 			TextPLZStadt.setText(feldbezeichnung.getPlzAndCity());
 			DateStartDatum.setPromptText(feldbezeichnung.getStartDate());
 			DateEndDatum.setPromptText(feldbezeichnung.getEndDate());
+			LabelOwnerPaechter.setText("Verpächter:");
+			Weiterleitung="MeineFelder.fxml";
 		}
 		
+		public void initData2(Fields feldbezeichnung) {
+			LabelFeldbezeichnung.setText(feldbezeichnung.getFieldName());
+			TextFlaeche.setText(Double. toString(feldbezeichnung.getFlaeche())+" m²");
+			TextVorNachname.setText(feldbezeichnung.getPaechter());
+			TextStrNr.setText(feldbezeichnung.getStreetAndNr());
+			TextPLZStadt.setText(feldbezeichnung.getPlzAndCity());
+			DateStartDatum.setPromptText(feldbezeichnung.getStartDate());
+			DateEndDatum.setPromptText(feldbezeichnung.getEndDate());
+			LabelOwnerPaechter.setText("Pächter:");
+			Weiterleitung="VerpachteteFelder.fxml";
+		}
 		@FXML
 		public void clickButtonAbbrechen(@SuppressWarnings("exports") ActionEvent event) throws IOException {
 			
+			Parent secondWindowParent=FXMLLoader.load(getClass().getResource(Weiterleitung));
+			Scene secondWindowScene=new Scene(secondWindowParent);
+			secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-			window.close();
+			window.setScene(secondWindowScene);
+			window.show();
 		}
 		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			// TODO Auto-generated method stub
 			
 		}
+		
 		
 		
 }

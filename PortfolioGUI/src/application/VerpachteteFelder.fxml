@@ -39,7 +39,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
 						</Group>
-                  <Group fx:id="GroupField2" onMouseClicked="#clickFeldDetail">
+                  <Group fx:id="GroupField2" onMouseClicked="#clickFeldDetails1">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
@@ -66,7 +66,7 @@
                         <Line endX="100.0" layoutX="1098.0" startX="-7.4000244140625" startY="-2.136230432370212E-5" />
                      </children>
                   </Group>
-                  <Group fx:id="GroupField3" onMouseClicked="#clickFeldDetail">
+                  <Group fx:id="GroupField3" onMouseClicked="#clickFeldDetails2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 2">
@@ -96,7 +96,7 @@
                         <Insets />
                      </VBox.margin>
                   </Group>
-                  <Group fx:id="GroupField4" onMouseClicked="#clickFeldDetail">
+                  <Group fx:id="GroupField4" onMouseClicked="#clickFeldDetails3">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 3">

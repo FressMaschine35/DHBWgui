@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="panecolor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeldDetailController">
    <children>
@@ -35,15 +34,18 @@
                            <children>
                               <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="458.0">
                                  <children>
-                                    <Label prefHeight="36.0" prefWidth="136.0" text="Verpächter:">
+                                    <Label fx:id="LabelOwnerPaechter" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="136.0" text="Verpächter:">
                                        <font>
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Gertrud Müller" wrappingWidth="279.13671875">
+                                    <Text fx:id="TextVorNachname" strokeType="OUTSIDE" strokeWidth="0.0" text="Gertrud Müller" wrappingWidth="275.13671875">
                                        <font>
                                           <Font name="System Bold" size="25.0" />
                                        </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
                                     </Text>
                                  </children>
                               </HBox>
@@ -68,7 +70,7 @@
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <DatePicker prefHeight="38.0" prefWidth="276.0" promptText="20/07/2021" />
+                                    <DatePicker fx:id="DateStartDatum" prefHeight="38.0" prefWidth="276.0" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="458.0">
@@ -78,7 +80,7 @@
                                           <Font size="25.0" />
                                        </font>
                                     </Label>
-                                    <DatePicker prefHeight="38.0" prefWidth="276.0" promptText="20/08/2021" />
+                                    <DatePicker fx:id="DateEndDatum" prefHeight="38.0" prefWidth="276.0" />
                                  </children>
                               </HBox>
                            </children>
@@ -111,11 +113,11 @@
                                     </VBox>
                                  </children>
                               </HBox>
-                              <WebView fx:id="WebMaps" prefHeight="172.0" prefWidth="392.0">
-                                 <VBox.margin>
-                                    <Insets bottom="20.0" left="20.0" right="20.0" />
-                                 </VBox.margin>
-                              </WebView>
+                              <ImageView fitHeight="185.0" fitWidth="284.0" preserveRatio="true">
+                                 <image>
+                                    <Image url="@IMG/MapsMünchenBerlinerStr2.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </VBox>
                      </children>

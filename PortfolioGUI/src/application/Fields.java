@@ -11,9 +11,9 @@ public class Fields {
 	SimpleStringProperty streetAndNr;
 	SimpleStringProperty plzAndCity;
 	SimpleDoubleProperty flaeche; 
+	SimpleStringProperty paechter;
 	
-	
-	Fields(String fName, String sDate, String eDate, String owner, String sAN, String pAC, Double fla) {
+	Fields(String fName, String sDate, String eDate, String owner, String sAN, String pAC, Double fla, String pae) {
 		this.fieldName = new SimpleStringProperty(fName);
 		this.startDate = new SimpleStringProperty(sDate);
 		this.endDate = new SimpleStringProperty(eDate);
@@ -21,6 +21,7 @@ public class Fields {
 		this.streetAndNr = new SimpleStringProperty(sAN);
 		this.plzAndCity = new SimpleStringProperty(pAC);
 		this.flaeche = new SimpleDoubleProperty(fla);
+		this.paechter= new SimpleStringProperty(pae);
 		
 	}
 
@@ -77,5 +78,16 @@ public class Fields {
 	public void setFlaeche(Double fla) {
 		flaeche.set(fla);
 	}
-		
+	public String getPaechter() {
+		return paechter.get();
+	}
+
+	public void setPaechter(String pae) {
+		plzAndCity.set(pae);
+	}
+	
+	
+	
+	
+	
 }
