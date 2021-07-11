@@ -31,7 +31,7 @@
                         </Label>
                         <ImageView fitHeight="161.0" fitWidth="182.0" layoutX="941.0" layoutY="20.0" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../Downloads/garten.png" />
+                              <Image url="@IMG/garten.png" />
                            </image>
                         </ImageView>
 							</children>
