@@ -24,6 +24,7 @@ public class FeldPachtenController {
 	@FXML
 	private Group GroupField12;
 	
+	private FieldExamples fieldExamples=new FieldExamples();
 	
 	@FXML
 	public void clickTextMenu (@SuppressWarnings("exports") MouseEvent event) throws IOException {
@@ -77,15 +78,26 @@ public class FeldPachtenController {
 		window.setScene(secondWindowScene);
 		window.show();
 	}
-	
+	@FXML
 	public void clickFeldMieten (@SuppressWarnings("exports") MouseEvent event) throws IOException {
-		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldMieten.fxml"));
-		Scene secondWindowScene=new Scene(secondWindowParent);
-		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
-		window.setScene(secondWindowScene);
-		window.show();
+
+		Fields Feld=fieldExamples.getFeld1();
+		showFeldMieten(Feld, event);
 	}
+	
+	@FXML
+	public void clickFeldMieten2 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld2();
+		showFeldMieten(Feld, event);
+	}
+	
+	@FXML
+	public void clickFeldMieten3 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld3();
+		showFeldMieten(Feld, event);
+	}
+		
+		
 	@FXML
 	public void clickHyperlinkAbmelden (@SuppressWarnings("exports") ActionEvent event) throws IOException {
 		
@@ -101,5 +113,19 @@ public class FeldPachtenController {
 		window2.setScene(secondWindowScene);
 		window2.show();
 		window.close();
+	}
+	
+	public Stage showFeldMieten(Fields feldbezeichnung, MouseEvent event) throws IOException {
+		  FXMLLoader loader = new FXMLLoader(getClass().getResource("FeldMieten.fxml"));
+
+		  Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		  stage.setScene(new Scene(loader.load()));
+
+		  FeldMietenController controller = loader.getController();
+		  controller.initData(feldbezeichnung);
+
+		  stage.show();
+
+		  return stage;
 	}
 }

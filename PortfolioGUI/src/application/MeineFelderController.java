@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -25,8 +26,16 @@ public class MeineFelderController {
 	private Text TextSuche;
 	@FXML
 	private Hyperlink HyperlinkAbmelden;
+	@FXML
+	private Group GroupField1;
 	
+	@FXML
+	private Group GroupField11;
 	
+	@FXML
+	private Group GroupField12;
+	
+	private FieldExamples fieldExamples=new FieldExamples();
 	
 	
 	@FXML
@@ -84,5 +93,47 @@ public class MeineFelderController {
 		window2.setScene(secondWindowScene);
 		window2.show();
 		window.close();
+	}
+	@FXML
+	public void clickFeldDetail (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+Image titleImg = new Image(getClass().getResourceAsStream("intelligente-landwirtschaft.png"));
+		
+		
+		Parent secondWindowParent=FXMLLoader.load(getClass().getResource("FeldDetail.fxml"));
+		Scene secondWindowScene=new Scene(secondWindowParent);
+		secondWindowScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
+		Stage window2=new Stage();
+		window2.getIcons().add(titleImg);
+		window2.setTitle("Urbane Gärten");
+		window2.setScene(secondWindowScene);
+		window2.show();
+	}
+	@FXML
+	public void clickFeldDetails1 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld1();
+		showFeldDetails(Feld, event);
+	}
+	@FXML
+	public void clickFeldDetails2 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld2();
+		showFeldDetails(Feld, event);
+	}
+	@FXML
+	public void clickFeldDetails3 (@SuppressWarnings("exports") MouseEvent event) throws IOException {
+		Fields Feld=fieldExamples.getFeld3();
+		showFeldDetails(Feld, event);
+	}
+	public Stage showFeldDetails(Fields feldbezeichnung, MouseEvent event) throws IOException {
+		  FXMLLoader loader = new FXMLLoader(getClass().getResource("FeldDetail.fxml"));
+		  
+		  Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		  stage.setScene(new Scene(loader.load()));
+
+		  FeldDetailController controller = loader.getController();
+		  controller.initData(feldbezeichnung);
+		  
+		  stage.show();
+		  return stage;
 	}
 }

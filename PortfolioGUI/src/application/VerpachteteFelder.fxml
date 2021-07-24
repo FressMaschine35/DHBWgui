@@ -21,37 +21,52 @@
 			<content>
 				<VBox id="background" fx:id="background" alignment="CENTER" prefHeight="562.0" prefWidth="1280.0" spacing="25.0">
 					<children>
-						<Group fx:id="GroupField1">
+						<Group fx:id="GroupField1" onMouseClicked="#clickFeldAnlegen">
 							<children>
-								<Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
-								<Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
-									<font>
-										<Font size="28.0" />
-									</font>
-								</Text>
-								<Label layoutX="216.0" layoutY="81.0" text="Verpachtet bis ">
-									<font>
-										<Font name="System Bold" size="26.0" />
-									</font>
-								</Label>
-								<Label layoutX="401.0" layoutY="81.0" prefHeight="38.0" prefWidth="129.0">
-									<font>
-										<Font size="26.0" />
-									</font>
-								</Label>
-								<ImageView fitHeight="250.0" fitWidth="372.0" layoutX="797.0" layoutY="-71.0">
-									<image>
-										<Image url="@IMG/landwirtschaftliches-und-landwirtschaftliches-system-mit-wasserkanal_253854-99.jpg" />
-									</image>
-								</ImageView>
-                        <Line endX="100.0" layoutX="781.0" layoutY="1.0" startX="-100.0" />
-                        <Line endX="100.0" layoutX="1098.0" startX="-7.4000244140625" startY="-2.136230432370212E-5" />
+								<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#43803899" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
+                        <Label layoutX="94.0" layoutY="83.0" text="Feld anlegen">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="161.0" fitWidth="182.0" layoutX="941.0" layoutY="20.0" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG/garten.png" />
+                           </image>
+                        </ImageView>
 							</children>
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
 						</Group>
-                  <Group fx:id="GroupField2">
+                  <Group fx:id="GroupField2" onMouseClicked="#clickFeldDetails1">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
+                        <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 1">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="216.0" layoutY="81.0" text="Verpachtet bis ">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="401.0" layoutY="81.0" prefHeight="38.0" prefWidth="129.0">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="250.0" fitWidth="372.0" layoutX="797.0" layoutY="-71.0">
+                           <image>
+                              <Image url="@IMG/landwirtschaftliches-und-landwirtschaftliches-system-mit-wasserkanal_253854-99.jpg" />
+                           </image>
+                        </ImageView>
+                        <Line endX="100.0" layoutX="781.0" layoutY="1.0" startX="-100.0" />
+                        <Line endX="100.0" layoutX="1098.0" startX="-7.4000244140625" startY="-2.136230432370212E-5" />
+                     </children>
+                  </Group>
+                  <Group fx:id="GroupField3" onMouseClicked="#clickFeldDetails2">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 2">
@@ -77,8 +92,11 @@
                         <Line endX="100.0" layoutX="781.0" layoutY="1.0" startX="-100.0" />
                         <Line endX="100.0" layoutX="1098.0" startX="-7.4000244140625" startY="-2.136230432370212E-5" />
                      </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
                   </Group>
-                  <Group fx:id="GroupField3">
+                  <Group fx:id="GroupField4" onMouseClicked="#clickFeldDetails3">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" styleClass="auswahl2" width="1200.0" />
                         <Text layoutX="92.0" layoutY="111.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Feld 3">
