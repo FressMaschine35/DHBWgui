@@ -1,5 +1,5 @@
 # DHBWgui
-Repo für das Fach UI/UX bei Fr. Rietdorf zum Thema GUI
+Repo für das Fach UI/UX bei Fr. Dr. Rietdorf zum Thema GUI
 
 Team Mitglieder:
 
