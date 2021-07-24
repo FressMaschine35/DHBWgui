@@ -152,10 +152,17 @@
                <children>
                   <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="604.0">
                      <children>
-                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="45.0" prefWidth="142.0" text="Abbrechen">
+                        <Button fx:id="ButtonAbbrechen" mnemonicParsing="false" onAction="#clickButtonAbbrechen" prefHeight="43.0" prefWidth="155.0" text="Abbrechen">
                            <font>
                               <Font size="20.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@IMG/Abbruch-IMG.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Button>
                      </children>
                      <HBox.margin>
@@ -168,6 +175,13 @@
                            <font>
                               <Font size="20.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@IMG/teilen.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Button>
                      </children>
                      <HBox.margin>

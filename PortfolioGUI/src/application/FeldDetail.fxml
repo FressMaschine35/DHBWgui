@@ -25,7 +25,7 @@
                <children>
                   <VBox prefHeight="660.0" prefWidth="528.0" spacing="10.0">
                      <children>
-                        <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="190.0" prefWidth="460.0" text="Felddetails">
+                        <Label fx:id="LabelFeldbezeichnung" alignment="CENTER" prefHeight="146.0" prefWidth="562.0" text="Felddetails">
                            <font>
                               <Font name="System Bold" size="44.0" />
                            </font>
@@ -159,6 +159,13 @@
                            <font>
                               <Font size="20.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@IMG/zuruck.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Button>
                      </children>
                      <HBox.margin>
